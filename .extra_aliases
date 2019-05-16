@@ -1,4 +1,4 @@
-alias 'hello'='echo Hellooo!'
+alias 'hello'='echo Helloooo!'
 alias 'resrc'='source ~/.bashrc'
 alias 'clip'='xsel -ib'
 alias 'pbm'='php bin/magento'
