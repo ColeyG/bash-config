@@ -29,3 +29,4 @@ comp1() {
 comp2() {
     php7.2 /usr/local/bin/composer "$@";
 }
+alias 'tab'='gnome-terminal --tab'
