@@ -1,4 +1,5 @@
-alias 'hello'='echo HellooooOo!'
+alias 'b-c'='Cole's Bash Config v1.0.0'
+alias 'hello'='Hello! Bash Config is using v1.0.0'
 alias 'resrc'='(cd ~/bash-config;git pull);source ~/.bashrc'
 alias 'clip'='xsel -ib'
 alias 'pbm'='php bin/magento'
@@ -6,6 +7,7 @@ alias 'pbmcf'='php bin/magento cache:flush'
 alias 'pbmsu'='php bin/magento setup:upgrade'
 alias 'ophere'='nautilus .'
 alias 'gst'='git status'
+alias 'grst'='git reset --hard;git pull'
 mg() {
     php bin/magento "$@";
 }
