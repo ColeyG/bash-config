@@ -1,5 +1,5 @@
 alias 'b-c'='Cole's Bash Config v1.0.0'
-alias 'hello'='Hello! Bash Config is using v1.0.0'
+alias 'hello'='echo Hello! Bash Config is using v1.0.0'
 alias 'resrc'='(cd ~/bash-config;git pull);source ~/.bashrc'
 alias 'clip'='xsel -ib'
 alias 'pbm'='php bin/magento'
