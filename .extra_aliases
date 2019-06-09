@@ -32,3 +32,4 @@ comp2() {
     php7.2 /usr/local/bin/composer "$@";
 }
 alias 'tab'='gnome-terminal --tab'
+alias 'nw'='~/Documents/nwjs-v0.38.4-linux-x64/nw'
