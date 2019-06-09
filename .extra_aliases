@@ -33,3 +33,4 @@ comp2() {
 }
 alias 'tab'='gnome-terminal --tab'
 alias 'nw'='~/Documents/nwjs-v0.38.4-linux-x64/nw'
+alias 'nwsdk'='~/Documents/nwjs-sdk-v0.38.4-linux-x64/nw'
