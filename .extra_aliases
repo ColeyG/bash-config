@@ -1,5 +1,7 @@
-alias 'b-c'='echo Cole Bash Config v1.0.1'
-alias 'hello'='echo Hello! Bash Config is using v1.0.1'
+version=1.0.2
+
+alias 'b-c'='echo Cole Bash Config v'$version
+alias 'hello'='echo Hello! Bash Config is using v'$version
 alias 'resrc'='(cd ~/bash-config;git pull);source ~/.bashrc'
 alias 'clip'='xsel -ib'
 alias 'pbm'='php bin/magento'
@@ -7,7 +9,7 @@ alias 'pbmcf'='php bin/magento cache:flush'
 alias 'pbmsu'='php bin/magento setup:upgrade'
 alias 'ophere'='nautilus .'
 alias 'gst'='git status'
-alias 'grst'='git reset --hard;git pull'
+alias 'grst'='git reset --hard;git clean -fd;git pull'
 mg() {
     php bin/magento "$@";
 }
