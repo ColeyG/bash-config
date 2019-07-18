@@ -1,4 +1,4 @@
-version=1.0.2
+version=1.0.3
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'hello'='echo Hello! Bash Config is using v'$version
@@ -36,3 +36,6 @@ comp2() {
 alias 'tab'='gnome-terminal --tab'
 alias 'nw'='~/Documents/nwjs-v0.38.4-linux-x64/nw'
 alias 'nwsdk'='~/Documents/nwjs-sdk-v0.38.4-linux-x64/nw'
+bcfind() {
+    find . -name "$@";
+}
