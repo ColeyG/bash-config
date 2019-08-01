@@ -1,4 +1,4 @@
-version=1.0.4
+version=1.0.5
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'hello'='echo Hello! Bash Config is using v'$version
@@ -7,7 +7,7 @@ alias 'clip'='xsel -ib'
 alias 'pbm'='php bin/magento'
 alias 'pbmcf'='php bin/magento cache:flush'
 alias 'pbmsu'='php bin/magento setup:upgrade'
-alias 'ophere'='nautilus .'
+alias 'ophere'='nautilus . &'
 alias 'gst'='git status'
 alias 'grst'='git reset --hard;git clean -fd;git pull'
 mg() {
