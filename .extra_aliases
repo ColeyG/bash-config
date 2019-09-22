@@ -1,4 +1,4 @@
-version=1.0.5
+version=1.0.6
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'hello'='echo Hello! Bash Config is using v'$version
@@ -40,3 +40,6 @@ bcfind() {
     find . -name "$@";
 }
 alias 'py'='python3'
+phpformat() {
+    prettier "$@"*.php --write;
+}
