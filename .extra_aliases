@@ -1,4 +1,4 @@
-version=1.0.6
+version=1.0.7
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'hello'='echo Hello! Bash Config is using v'$version
@@ -43,3 +43,4 @@ alias 'py'='python3'
 phpformat() {
     prettier "$@"*.php --write;
 }
+alias 'leslint'='./node_modules/.bin/eslint'
