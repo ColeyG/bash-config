@@ -1,6 +1,7 @@
-version=1.0.7
+version=1.0.8
 
 alias 'b-c'='echo Cole Bash Config v'$version
+alias 'showbc'='cat ~/bash-config/.extra_aliases'
 alias 'hello'='echo Hello! Bash Config is using v'$version
 alias 'resrc'='(cd ~/bash-config;git pull);source ~/.bashrc'
 alias 'clip'='xsel -ib'
