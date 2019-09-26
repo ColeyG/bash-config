@@ -1,4 +1,4 @@
-version=1.0.8
+version=1.0.9
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/.extra_aliases'
@@ -45,3 +45,6 @@ phpformat() {
     prettier "$@"*.php --write;
 }
 alias 'leslint'='./node_modules/.bin/eslint'
+defjs() {
+  git clone https://github.com/ColeyG/default.git "$@";cd "$@";rm -rf .git;cd ..
+}
