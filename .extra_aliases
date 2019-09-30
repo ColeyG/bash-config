@@ -1,4 +1,4 @@
-version=1.0.10
+version=1.0.11
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/.extra_aliases'
@@ -51,4 +51,7 @@ defjs() {
 }
 gcm() {
   git add .; git commit -m "$@";
+}
+crtab() {
+  google-chrome localhost/${PWD##*/};
 }
