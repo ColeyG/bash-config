@@ -1,4 +1,4 @@
-version=1.0.11
+version=1.0.12
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/.extra_aliases'
@@ -54,4 +54,8 @@ gcm() {
 }
 crtab() {
   google-chrome localhost/${PWD##*/};
+}
+removeSpacesR() {
+  find $1 -depth -name "* *" -type d -execdir rename 's/ /_/g' "{}" \;
+  find $1 -depth -name "* *" -type f -execdir rename 's/ /_/g' "{}" \;
 }
