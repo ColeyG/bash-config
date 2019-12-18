@@ -1,4 +1,4 @@
-version=1.0.14
+version=1.0.15
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/.extra_aliases'
@@ -57,7 +57,9 @@ crtab() {
 }
 removeSpecialChars() {
   find $1 -depth -name "* *" -type d -execdir rename 's/ /_/g' "{}" \;
-  find $1 -depth -name "*" -type d -execdir rename 's/[\[\]\(\)]//g' "{}" \;
+  find $1 -depth -name "*" -type d -execdir rename 's/["\[\]\(\)]//g' "{}" \;
+  find $1 -depth -name "*" -type d -execdir rename "s/'//g" "{}" \;
   find $1 -depth -name "* *" -type f -execdir rename 's/ /_/g' "{}" \;
-  find $1 -depth -name "*" -type f -execdir rename 's/[\[\]\(\)]//g' "{}" \;
+  find $1 -depth -name "*" -type f -execdir rename 's/["\[\]\(\)]//g' "{}" \;
+  find $1 -depth -name "*" -type f -execdir rename "s/'//g" "{}" \;
 }
