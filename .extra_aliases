@@ -1,4 +1,4 @@
-version=1.0.15
+version=1.0.16
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/.extra_aliases'
@@ -27,11 +27,11 @@ comp() {
     php /usr/local/bin/composer "$@";
 }
 
-comp1() {
+composer1() {
     php7.1 /usr/local/bin/composer "$@";
 }
 
-comp2() {
+composer2() {
     php7.2 /usr/local/bin/composer "$@";
 }
 
@@ -62,4 +62,7 @@ removeSpecialChars() {
   find $1 -depth -name "* *" -type f -execdir rename 's/ /_/g' "{}" \;
   find $1 -depth -name "*" -type f -execdir rename 's/["\[\]\(\)]//g' "{}" \;
   find $1 -depth -name "*" -type f -execdir rename "s/'//g" "{}" \;
+}
+bccomp() {
+  ~/bash-config/quickCppCompile.sh "$@";
 }
