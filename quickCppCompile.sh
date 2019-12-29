@@ -1,11 +1,13 @@
 #!/bin/bash
 
 r=0
+d=0
 
-while getopts 'tr' opt; do
+while getopts 'trd' opt; do
     case $opt in
       t) echo 'Null T Flag Set' ;;
       r) r=1 ;;
+      d) d=1 ;;
       *) echo 'Error in command line parsing' >&2
          exit 1
     esac
@@ -21,4 +23,8 @@ g++ "$(pwd)/${file}" -o "$(pwd)/${output}"
 
 if [ "$r" -eq 1 ]; then
   ./"${output}";
+fi
+
+if [ "$d" -eq 1 ]; then
+  rm "${output}";
 fi
