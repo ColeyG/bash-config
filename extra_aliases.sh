@@ -1,70 +1,17 @@
 #!/bin/bash
 
-version=1.1.0
+version=1.1.1
+
+. ~/bash-config/aliases/cpp.sh
+. ~/bash-config/aliases/git.sh
+. ~/bash-config/aliases/js.sh
+. ~/bash-config/aliases/misc.sh
+. ~/bash-config/aliases/php.sh
+. ~/bash-config/aliases/python.sh
 
 alias 'b-c'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/extra_aliases.sh'
+alias 'bcshow'='cat ~/bash-config/extra_aliases.sh'
 alias 'hello'='echo Hello! Bash Config is using v'$version
 alias 'resrc'='(cd ~/bash-config;git pull;bash setup.sh);source ~/.bashrc'
-alias 'clip'='xsel -ib'
-alias 'pbm'='php bin/magento'
-alias 'pbmcf'='php bin/magento cache:flush'
-alias 'pbmsu'='php bin/magento setup:upgrade'
-alias 'ophere'='nautilus . &'
-alias 'gst'='git status'
-alias 'grst'='git reset --hard;git clean -fd;git pull'
-mg() {
-    php bin/magento "$@";
-}
-
-mg1() {
-    php7.1 bin/magento "$@";
-}
-
-mg2() {
-    php7.2 bin/magento "$@";
-}
-
-comp() {
-    php /usr/local/bin/composer "$@";
-}
-
-composer1() {
-    php7.1 /usr/local/bin/composer "$@";
-}
-
-composer2() {
-    php7.2 /usr/local/bin/composer "$@";
-}
-
-alias 'tab'='gnome-terminal --tab'
-alias 'nw'='~/Documents/nwjs-v0.38.4-linux-x64/nw'
-alias 'nwsdk'='~/Documents/nwjs-sdk-v0.38.4-linux-x64/nw'
-bcfind() {
-    find . -name "$@";
-}
-alias 'py'='python3'
-phpformat() {
-    prettier "$@"*.php --write;
-}
-alias 'leslint'='./node_modules/.bin/eslint'
-defjs() {
-  git clone https://github.com/ColeyG/default.git "$@";cd "$@";rm -rf .git;cd ..
-}
-gcm() {
-  git add .; git commit -m "$@";
-}
-crtab() {
-  google-chrome localhost/${PWD##*/};
-}
-removeSpecialChars() {
-  find $1 -depth -name "* *" -type d -execdir rename 's/ /_/g' "{}" \;
-  find $1 -depth -name "*" -type d -execdir rename 's/["\[\]\(\)]//g' "{}" \;
-  find $1 -depth -name "*" -type d -execdir rename "s/'//g" "{}" \;
-  find $1 -depth -name "* *" -type f -execdir rename 's/ /_/g' "{}" \;
-  find $1 -depth -name "*" -type f -execdir rename 's/["\[\]\(\)]//g' "{}" \;
-  find $1 -depth -name "*" -type f -execdir rename "s/'//g" "{}" \;
-}
-bccomp() {
-  ~/bash-config/quickCppCompile.sh "$@";
-}
+alias 'bcsetup'='(cd ~/bash-config;bash setup.sh)'
