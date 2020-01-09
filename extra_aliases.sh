@@ -1,9 +1,11 @@
-version=1.0.17
+#!/bin/bash
+
+version=1.1.0
 
 alias 'b-c'='echo Cole Bash Config v'$version
-alias 'showbc'='cat ~/bash-config/.extra_aliases'
+alias 'showbc'='cat ~/bash-config/extra_aliases.sh'
 alias 'hello'='echo Hello! Bash Config is using v'$version
-alias 'resrc'='(cd ~/bash-config;git pull);source ~/.bashrc'
+alias 'resrc'='(cd ~/bash-config;git pull;bash setup.sh);source ~/.bashrc'
 alias 'clip'='xsel -ib'
 alias 'pbm'='php bin/magento'
 alias 'pbmcf'='php bin/magento cache:flush'
