@@ -3,6 +3,7 @@
 alias 'pbm'='php bin/magento'
 alias 'pbmcf'='php bin/magento cache:flush'
 alias 'pbmsu'='php bin/magento setup:upgrade'
+alias 'phpunit'='vendor/phpunit/phpunit/phpunit'
 mg() {
     php bin/magento "$@";
 }

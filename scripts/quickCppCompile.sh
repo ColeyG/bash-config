@@ -17,9 +17,10 @@ shift "$(( OPTIND - 1 ))"
 
 
 file=$1
+deps=$2
 output=$(echo ${file} | sed 's/.cpp//')
 
-g++ "$(pwd)/${file}" -o "$(pwd)/${output}"
+g++ "$(pwd)/${file}" -o "$(pwd)/${output}" "$(pwd)/${deps}"
 
 if [ "$r" -eq 1 ]; then
   ./"${output}";
