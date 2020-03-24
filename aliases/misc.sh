@@ -1,7 +1,7 @@
 #!/bin/bash
 
 alias 'clip'='xsel -ib'
-alias 'ophere'='nautilus . &'
+alias 'ophere'='$(nautilus . &)'
 alias 'tab'='gnome-terminal --tab'
 crtab() {
   google-chrome localhost/${PWD##*/};
