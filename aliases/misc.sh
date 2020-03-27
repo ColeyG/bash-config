@@ -1,5 +1,6 @@
 #!/bin/bash
 
+alias 'll'='ls -alG'
 alias 'clip'='xsel -ib'
 alias 'ophere'='$(nautilus . &)'
 alias 'tab'='gnome-terminal --tab'
