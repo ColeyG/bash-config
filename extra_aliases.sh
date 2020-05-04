@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=1.1.3
+version=1.1.4
 
 . ~/bash-config/aliases/cpp.sh
 . ~/bash-config/aliases/git.sh

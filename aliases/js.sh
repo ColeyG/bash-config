@@ -9,3 +9,6 @@ alias 'leslint'='./node_modules/.bin/eslint'
 defjs() {
   git clone https://github.com/ColeyG/default.git "$@";cd "$@";rm -rf .git;cd ..
 }
+defgatsby() {
+  git clone https://github.com/ColeyG/gatsby-default.git "$@";cd "$@";rm -rf .git;cd ..
+}
