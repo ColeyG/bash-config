@@ -4,6 +4,8 @@ alias 'll'='ls -alG'
 alias 'clip'='xsel -ib'
 alias 'ophere'='$(nautilus . &)'
 alias 'tab'='gnome-terminal --tab'
+alias 'bctar'='tar -xvf'
+alias 'bctargz'='tar -zxvf'
 crtab() {
   google-chrome localhost/${PWD##*/};
 }
