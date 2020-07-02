@@ -3,6 +3,7 @@
 alias 'll'='ls -alG'
 alias 'clip'='xsel -ib'
 alias 'ophere'='$(nautilus . &)'
+alias 'wo'='explorer.exe .'
 alias 'tab'='gnome-terminal --tab'
 alias 'bctar'='tar -xvf'
 alias 'bctargz'='tar -zxvf'
