@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=1.1.5
+version=1.1.6
 
 . ~/bash-config/aliases/cpp.sh
 . ~/bash-config/aliases/git.sh
@@ -9,7 +9,7 @@ version=1.1.5
 . ~/bash-config/aliases/php.sh
 . ~/bash-config/aliases/python.sh
 
-alias 'b-c'='echo Cole Bash Config v'$version
+alias 'bc'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/extra_aliases.sh'
 alias 'bcshow'='cat ~/bash-config/extra_aliases.sh'
 alias 'hello'='echo Hello! Bash Config is using v'$version
