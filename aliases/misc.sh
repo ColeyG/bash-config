@@ -5,6 +5,7 @@ alias 'clip'='xsel -ib'
 alias 'ophere'='$(nautilus . &)'
 alias 'wo'='explorer.exe .'
 alias 'tab'='gnome-terminal --tab'
+alias 'nglog'='cat /var/log/nginx/error.log'
 crtab() {
   google-chrome localhost/${PWD##*/};
 }
