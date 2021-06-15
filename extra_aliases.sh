@@ -1,7 +1,8 @@
 #!/bin/bash
 
-version=1.2.0
+version=1.2.2
 
+. ~/bash-config/aliases/connections.sh
 . ~/bash-config/aliases/cpp.sh
 . ~/bash-config/aliases/git.sh
 . ~/bash-config/aliases/js.sh
