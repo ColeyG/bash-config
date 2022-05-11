@@ -11,6 +11,10 @@ alias 'bctar'='tar -xvf'
 alias 'bctargz'='tar -zxvf'
 alias 'kvsc'='killall code'
 alias 'kvsco'='killall code;code .'
+touchco() {
+  touch "$@";
+  code "$@";
+}
 crtab() {
   google-chrome localhost/${PWD##*/};
 }
