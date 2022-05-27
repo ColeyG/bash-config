@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=2.0.1
+version=2.0.2
 
 . ~/bash-config/aliases/connections.sh
 . ~/bash-config/aliases/cpp.sh
@@ -14,5 +14,5 @@ alias 'bc'='echo Cole Bash Config v'$version
 alias 'showbc'='cat ~/bash-config/extra_aliases.sh'
 alias 'bcshow'='cat ~/bash-config/extra_aliases.sh'
 alias 'hello'='echo Hello! Bash Config is using v'$version
-alias 'resrc'='(cd ~/bash-config;git pull;bash setup.sh);source ~/.bashrc'
+alias 'resrc'='(cd ~/bash-config;git pull;cd ../;bash bash-config/setup.sh);source ~/.bashrc'
 alias 'bcsetup'='(cd ~/bash-config;bash setup.sh)'
