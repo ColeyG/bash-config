@@ -1,5 +1,8 @@
 #!/bin/bash
 
+alias pushd='pushd >/dev/null'
+alias 'cd'='pushd'
+alias 'back'='popd'
 alias 'll'='ls -alG'
 alias 'clip'='xsel -ib'
 alias 'ophere'='$(nautilus . &)'
