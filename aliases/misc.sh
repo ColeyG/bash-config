@@ -14,6 +14,9 @@ alias 'bctar'='tar -xvf'
 alias 'bctargz'='tar -zxvf'
 alias 'kvsc'='killall code'
 alias 'kvsco'='killall code;code .'
+trash() {
+  mv "$@" ~/.Trash;
+}
 touchco() {
   touch "$@";
   code "$@";
