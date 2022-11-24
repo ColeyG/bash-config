@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=2.0.5
+version=2.1.0
 
 . ~/bash-config/aliases/connections.sh
 . ~/bash-config/aliases/cpp.sh
