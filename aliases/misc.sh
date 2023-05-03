@@ -21,9 +21,6 @@ touchco() {
   touch "$@";
   code "$@";
 }
-crtab() {
-  google-chrome localhost/${PWD##*/};
-}
 removeSpecialChars() {
   find $1 -depth -name "* *" -type d -execdir rename 's/ /_/g' "{}" \;
   find $1 -depth -name "*" -type d -execdir rename 's/["\[\]\(\)]//g' "{}" \;
@@ -32,8 +29,7 @@ removeSpecialChars() {
   find $1 -depth -name "*" -type f -execdir rename 's/["\[\]\(\)]//g' "{}" \;
   find $1 -depth -name "*" -type f -execdir rename "s/'//g" "{}" \;
 }
-pingDiscord() {
-  source ~/bash-config/secrets.txt
-  BODY="{\"username\": \"Coley\", \"password\": \"${PASSWORD}\", \"message\": \"$@\"}"
+pingdiscord() {
+  BODY="{\"username\": \"Coley\", \"message\": \"$@\"}"
   curl -d "${BODY}" -H "Content-Type: application/json" -X POST https://coley.world/api/custom-discord-message
 }
