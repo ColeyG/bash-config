@@ -2,4 +2,4 @@
 
 This is my repository to house my configuration for bash aliases and other bash stuff
 
-`git clone https://github.com/ColeyG/bash-config.git; sudo bash ~/bash-config/setup.sh; source ~/.bashrc`
+`git clone https://github.com/ColeyG/bash-config.git;bash ~/bash-config/setup.sh; source ~/.bashrc`
