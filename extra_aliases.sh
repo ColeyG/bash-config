@@ -15,3 +15,11 @@ alias 'bcshow'='cat ~/bash-config/extra_aliases.sh'
 alias 'hello'='echo Hello! Bash Config is using v'$version' '$date
 alias 'resrc'='(cd ~/bash-config;git pull;cd ../;bash bash-config/setup.sh);source ~/.bashrc'
 alias 'bcsetup'='(cd ~/bash-config;bash setup.sh)'
+
+# History Config
+
+export HISTCONTROL=
+export HISTFILESIZE=
+export HISTSIZE=
+shopt -s histappend
+PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
