@@ -1,12 +1,14 @@
 #!/bin/bash
 
-version=2.1.0
+# INCREMENT ME!
+version=2.1.2
 
 . ~/bash-config/aliases/connections.sh
 . ~/bash-config/aliases/cpp.sh
 . ~/bash-config/aliases/git.sh
 . ~/bash-config/aliases/js.sh
 . ~/bash-config/aliases/misc.sh
+. ~/bash-config/aliases/misspellings.sh
 . ~/bash-config/aliases/php.sh
 . ~/bash-config/aliases/python.sh
 
