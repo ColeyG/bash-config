@@ -19,8 +19,8 @@ alias 'bcsetup'='(cd ~/bash-config;bash setup.sh)'
 
 # History Config
 
-export HISTCONTROL=
-export HISTFILESIZE=
-export HISTSIZE=
-shopt -s histappend
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+# export HISTCONTROL=
+# export HISTFILESIZE=
+# export HISTSIZE=
+# shopt -s histappend
+# PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
