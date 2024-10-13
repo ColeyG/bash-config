@@ -33,5 +33,5 @@ removeSpecialChars() {
 }
 pingdiscord() {
   BODY="{\"username\": \"Coley\", \"message\": \"$@\"}"
-  curl -d "${BODY}" -H "Content-Type: application/json" -X POST cole.blue:8921/custom-discord-message
+  curl -d "${BODY}" -H "Content-Type: application/json" -X POST https://cole.blue/custom-discord-message
 }

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-version=2.2.0
-date="oct-05-2024"
+version=2.2.1
+date="oct-13-2024"
 
 . ~/bash-config/aliases/git.sh
 . ~/bash-config/aliases/js.sh
